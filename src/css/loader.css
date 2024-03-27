@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 .loader {
     width: 48px;
     height: 48px;
@@ -11,7 +7,6 @@
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    margin: 0 auto;
 }
 
 @keyframes rotation {
@@ -22,4 +17,17 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.loader {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
